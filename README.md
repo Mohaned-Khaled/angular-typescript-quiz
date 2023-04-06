@@ -1,6 +1,7 @@
 # AngularQuiz
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.\
+Its angular and typescript quiz consist of 9 questions every right answer with 10 points and every wrong answer with -10 points
 
 ## Development server
 
