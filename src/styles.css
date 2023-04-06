@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+body,
+html {
+  background-color: rgb(248, 249, 250) !important;
+}

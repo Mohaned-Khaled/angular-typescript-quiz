@@ -1,0 +1,41 @@
+<div class="container py-5 custom-container">
+  <h1 class="display-5 fw-bold">Welcome To Quiz App</h1>
+  <p class="col-md-8 fs-4">
+    This quiz will contain total 9 questions. Each question holds 10 points
+  </p>
+  <h4 class="mt-5">Rules</h4>
+  <ol class="d-flex flex-column gap-3">
+    <li>Correct question give you 10 points</li>
+    <li>Incorrect question gives you -10 points</li>
+    <li>You will have 10 secs to answer each question</li>
+    <li>Refreshing the page will reset the quiz</li>
+  </ol>
+  <form #f="ngForm" (ngSubmit)="onStartQuiz(f)">
+    <div class="row my-4">
+      <div class="col-md-4 form-floating">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          ngModel
+          placeholder="Enter Your Name"
+          class="form-control"
+          required
+        />
+        <label class="ms-3 text-secondary" for="name">Enter Your Name</label>
+      </div>
+      <div
+        class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start mt-3 mt-md-0"
+      >
+        <button
+          class="btn btn-primary btn-lg"
+          type="submit"
+          [disabled]="!f.valid"
+        >
+          Start The Quiz
+        </button>
+      </div>
+    </div>
+  </form>
+  <p class="text-center fst-italic my-4">All the best</p>
+</div>
